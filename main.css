@@ -1,0 +1,26 @@
+.container form {
+    padding: 100px;
+    background-color: lightblue;
+    width: 200px;
+    margin: 0 auto;
+}
+
+form input, button {
+    display: block;
+    width: 120px;
+    padding: 16px;
+    margin: auto;
+    
+}
+
+form button {
+    padding: 16px;
+    width: 155px;
+}
+
+form label {
+    font-size: 12px;
+    text-align: center;
+    color: red;
+    display: none;
+}

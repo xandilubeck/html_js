@@ -21,14 +21,22 @@ form.addEventListener('submit', function(e) {
   }
 })
 
-validaNumero.addEventListener('keyup', function(e) {
-  form = validaNumero(e.target.value);
+document.getElementById('nb').addEventListener('keyup', function() {
+  validaNumero();
 
   if (valorA > valorB) {
     document.querySelector('.msg_erro').style.display = 'block';
-  } else if (valorB > valorA) {
-    document.querySelector('.msg_erro').style.display = 'none';
   } else {
-    alert("Os valores de A e B são iguais.");
+    document.querySelector('.msg_erro').style.display = 'none';
+  }
+});
+
+document.getElementById('na').addEventListener('keyup', function() {
+  validaNumero();
+
+  if (valorA > valorB) {
+    document.querySelector('.msg_erro').style.display = 'block';
+  } else {
+    document.querySelector('.msg_erro').style.display = 'none';
   }
 });
